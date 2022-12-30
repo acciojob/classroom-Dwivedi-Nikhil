@@ -44,14 +44,14 @@ public class StudentRepository {
     }
 
     public Student findStudent(String student){
-        Student student1=null;
-        if(studentmap.containsKey(student)){
+       // Student student1=null;
+       // if(studentmap.containsKey(student)){
             return studentmap.get(student);
-        }
-        return student1;
-    }// public Movie findMovie(String movie){
-//        return movieMap.get(movie);
-//}  wrong
+        //}
+       // return student1;
+    }
+    // public Movie findMovie(String movie){
+    //        return movieMap.get(movie); //}  wrong
 
     public Teacher findTeacher(String teacher){
         Teacher teacher1=null;
