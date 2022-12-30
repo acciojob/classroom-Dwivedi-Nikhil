@@ -3,11 +3,8 @@ package com.driver;
 public class Teacher {
 
     private String name;
-
     private int numberOfStudents;
-
     private int age;
-
     public Teacher() {
 
     }
@@ -32,7 +29,6 @@ public class Teacher {
     public void setNumberOfStudents(int numberOfStudents) {
         this.numberOfStudents = numberOfStudents;
     }
-
 
     public int getAge() {
         return age;

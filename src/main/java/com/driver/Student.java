@@ -30,7 +30,6 @@ public class Student {
         this.age = age;
     }
 
-
     public double getAverageScore() {
         return averageScore;
     }

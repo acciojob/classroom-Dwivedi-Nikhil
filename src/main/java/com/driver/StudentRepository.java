@@ -12,6 +12,7 @@ public class StudentRepository {
     private HashMap<String, List<String>> teacherstudent;
 
     public StudentRepository(){
+        super();
         this.studentmap = new HashMap<String, Student>();
         this.teachermap = new HashMap<String, Teacher>();
         this.teacherstudent = new HashMap<String, List<String>>();
@@ -42,12 +43,23 @@ public class StudentRepository {
         }
     }
 
-    public Student findStudent(String name){
-        return studentmap.get(name);
-    }
+    public Student findStudent(String student){
+        Student student1=null;
+        if(studentmap.containsKey(student)){
+            return studentmap.get(student);
+        }
+        return student1;
+    }// public Movie findMovie(String movie){
+//        return movieMap.get(movie);
+//}  wrong
 
-    public Teacher findTeacher(String name){
-        return teachermap.get(name);
+    public Teacher findTeacher(String teacher){
+        Teacher teacher1=null;
+        if(teachermap.containsKey(teacher)){
+            return teachermap.get(teacher);
+        }
+
+        return teacher1;
     }
 
     public List<String> findStudentbyTeacher(String teachername){
