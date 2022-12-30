@@ -23,11 +23,11 @@ public class StudentService {
         studentRepository.StudentTeacherPair(student, teacher);
     }
 
-    public void getStudent(String name){
-        studentRepository.findStudent(name);
+    public Student getStudent(String name){
+        return studentRepository.findStudent(name);  //mistake: return type void liya tha
     }
-    public void findTeacher(String name){
-        studentRepository.findTeacher(name);
+    public Teacher findTeacher(String name){
+       return studentRepository.findTeacher(name); //mistake: return type void liya tha
     }
 
     public List<String> findStudentsbyTeacher(String teacher){

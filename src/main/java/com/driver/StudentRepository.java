@@ -63,7 +63,7 @@ public class StudentRepository {
     }
 
     public List<String> findStudentbyTeacher(String teachername){
-        List<String> studentList = new ArrayList<String>();
+        List<String> studentList = new ArrayList<>();
         if(teacherstudent.containsKey(teachername)) studentList = teacherstudent.get(teachername);
         return studentList;
     }
