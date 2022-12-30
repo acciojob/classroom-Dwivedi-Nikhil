@@ -29,4 +29,16 @@ public class Teacher {
     public int getAge() {
         return age;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setNumberOfStudents(int numberOfStudents) {
+        this.numberOfStudents = numberOfStudents;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }
